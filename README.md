@@ -4,3 +4,5 @@
 # Installation
 git clone git://github.com/mangege/myvimrc.git ~/.vim  
 echo "source ~/.vim/vimrc" > ~/.vimrc
+git submodule init
+git submodule update
