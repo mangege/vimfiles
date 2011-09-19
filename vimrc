@@ -87,9 +87,9 @@ function! SetCursorPosition()
 endfunction
 
 "snipmate setup 安装片断
-source ~/.vim/bundle/snipmate.vim/snippets/support_functions.vim
+source ~/.vim/snippets/support_functions.vim
 autocmd vimenter * call s:SetupSnippets()
 function! s:SetupSnippets()
-    call ExtractSnips("~/.vim/bundle/snipmate.vim/snippets/html", "eruby")
-    call ExtractSnips("~/.vim/bundle/snipmate.vim/snippets/html", "xhtml")
+    call ExtractSnips("~/.vim/snippets/html", "eruby")
+    call ExtractSnips("~/.vim/snippets/html", "xhtml")
 endfunction
