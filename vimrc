@@ -5,7 +5,8 @@ filetype plugin indent on
 
 if $COLORTERM == 'gnome-terminal' 
   set term=gnome-256color 
-  colorscheme railscasts 
+  let g:molokai_original = 1
+  colorscheme molokai 
 else 
   colorscheme elflord 
 endif 
