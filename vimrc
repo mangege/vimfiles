@@ -67,6 +67,9 @@ let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 "ragtag 快速输入eruby 标签
 let g:ragtag_global_maps = 1 
 
+"statusline setup  状态栏显示文件完整路径
+set statusline=%f       "tail of the filename
+
 "语法检查
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
