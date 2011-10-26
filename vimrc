@@ -48,6 +48,11 @@ set hidden
 set wildmode=list:longest
 set wildmenu
 
+"高亮搜索
+set hlsearch
+set incsearch
+nnoremap <F12> :nohlsearch<CR> 
+
 "key mapping for window navigation 映射窗口切换快捷键
 map <C-h> <C-w>h
 map <C-j> <C-w>j
