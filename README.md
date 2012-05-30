@@ -1,3 +1,5 @@
+# 已过期,请使用master分支的配置
+
 # Description
   个人的针对rails vimrc,只安装了必要的插件
 
