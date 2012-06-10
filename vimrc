@@ -22,7 +22,8 @@ filetype plugin indent on
 
 syntax on
 
-if $COLORTERM == 'gnome-terminal' 
+"if $COLORTERM == 'gnome-terminal' 
+if &term == 'gnome-256color'  || &term == 'rxvt-unicode-256color'
   set term=gnome-256color 
   let g:molokai_original = 1
   colorscheme molokai 
