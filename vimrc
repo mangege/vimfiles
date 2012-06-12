@@ -68,6 +68,9 @@ set hidden
 set wildmode=list:longest
 set wildmenu
 
+" toggle paste mode on/off
+map <F9> :set paste!<cr>:set paste?<cr>
+
 "高亮搜索
 set hlsearch
 set incsearch
