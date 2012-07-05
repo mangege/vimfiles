@@ -1,1 +1,4 @@
 /bundle
+/doc
+/plugin/vimcdoc.vim
+/syntax/help_cn.vim
