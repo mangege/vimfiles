@@ -17,6 +17,7 @@ Bundle 'akitaonrails/snipmate-snippets'
 Bundle 'scrooloose/syntastic'
 
 Bundle 'plasticboy/vim-markdown'
+Bundle 'kchmck/vim-coffee-script'
 filetype plugin indent on
 "end vundle
 
