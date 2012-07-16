@@ -18,6 +18,7 @@ Bundle 'scrooloose/syntastic'
 
 Bundle 'plasticboy/vim-markdown'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'cakebaker/scss-syntax.vim'
 filetype plugin indent on
 "end vundle
 
