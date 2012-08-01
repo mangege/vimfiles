@@ -15,6 +15,7 @@ Bundle 'tpope/vim-rails'
 Bundle 'msanders/snipmate.vim'
 Bundle 'akitaonrails/snipmate-snippets'
 Bundle 'scrooloose/syntastic'
+Bundle 'slimv.vim'
 
 Bundle 'plasticboy/vim-markdown'
 Bundle 'kchmck/vim-coffee-script'
@@ -35,6 +36,8 @@ endif
 
 "store lots of :cmdline history 保存命令历史
 set history=1000
+
+set mouse=a
 
 set showcmd "show incomplete cmds down the bottom 显示正在输入的命令
 set showmode "show current mode down the bottom 显示当前模式
@@ -128,3 +131,6 @@ function! s:SetupSnippets()
     call ExtractSnips("~/.vim/bundle/snipmate-snippets/html", "eruby")
     call ExtractSnips("~/.vim/bundle/snipmate-snippets/html", "xhtml")
 endfunction
+
+"off paredit
+let g:paredit_mode = 0
