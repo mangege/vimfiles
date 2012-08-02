@@ -20,6 +20,7 @@ Bundle 'slimv.vim'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'cakebaker/scss-syntax.vim'
+Bundle 'groenewege/vim-less'
 filetype plugin indent on
 "end vundle
 
