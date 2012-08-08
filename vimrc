@@ -16,6 +16,7 @@ Bundle 'msanders/snipmate.vim'
 Bundle 'akitaonrails/snipmate-snippets'
 Bundle 'scrooloose/syntastic'
 Bundle 'slimv.vim'
+Bundle 'gnupg'
 
 Bundle 'plasticboy/vim-markdown'
 Bundle 'kchmck/vim-coffee-script'
