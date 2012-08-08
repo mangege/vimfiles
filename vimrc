@@ -18,7 +18,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'slimv.vim'
 Bundle 'gnupg'
 
-Bundle 'plasticboy/vim-markdown'
+Bundle 'hallison/vim-markdown'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'groenewege/vim-less'
