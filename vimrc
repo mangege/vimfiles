@@ -78,6 +78,9 @@ set wildmenu
 " toggle paste mode on/off
 map <F9> :set paste!<cr>:set paste?<cr>
 
+"open current to new tab
+map <Leader>t :tabnew %<CR>
+
 "高亮搜索
 set hlsearch
 set incsearch
