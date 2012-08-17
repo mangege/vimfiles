@@ -141,5 +141,5 @@ endfunction
 let g:paredit_mode = 0
 
 "Highlight long lines http://vim.wikia.com/wiki/VimTip810
-:au BufWinEnter *.rb,*.js let w:m1=matchadd('Search', '\%<81v.\%>77v', -1)
-:au BufWinEnter *.rb,*.js let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+"au BufWinEnter *.rb let w:m1=matchadd('Search', '\%<81v.\%>77v', -1)
+"au BufWinEnter *.rb let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
