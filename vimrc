@@ -26,7 +26,8 @@ Bundle 'groenewege/vim-less'
 "js
 Bundle 'michalliu/jsruntime.vim'
 Bundle 'michalliu/jsoncodecs.vim'
-Bundle 'michalliu/sourcebeautify.vim' "use <Leader>sb
+Bundle 'michalliu/sourcebeautify.vim'
+"use <Leader>sb
 
 filetype plugin indent on
 "end vundle
