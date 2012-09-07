@@ -22,6 +22,12 @@ Bundle 'hallison/vim-markdown'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'groenewege/vim-less'
+
+"js
+Bundle 'michalliu/jsruntime.vim'
+Bundle 'michalliu/jsoncodecs.vim'
+Bundle 'michalliu/sourcebeautify.vim' "use <Leader>sb
+
 filetype plugin indent on
 "end vundle
 
