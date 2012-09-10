@@ -150,3 +150,9 @@ let g:paredit_mode = 0
 "Highlight long lines http://vim.wikia.com/wiki/VimTip810
 "au BufWinEnter *.rb let w:m1=matchadd('Search', '\%<81v.\%>77v', -1)
 "au BufWinEnter *.rb let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+
+"http://www.nonozone.net/solve-vim-chinese-garbled.html
+set fileencodings=utf-8,gb2312,gbk,gb18030
+"set termencoding=utf-8
+"set fileformats=unix
+"set encoding=prc
