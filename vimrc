@@ -154,5 +154,5 @@ let g:paredit_mode = 0
 "http://www.nonozone.net/solve-vim-chinese-garbled.html
 set fileencodings=utf-8,gb2312,gbk,gb18030,default,latinl
 "set termencoding=utf-8
-set fileformats=unix
+set fileformats=unix,dos
 "set encoding=prc
