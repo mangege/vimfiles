@@ -23,6 +23,8 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'groenewege/vim-less'
 
+Bundle 'molokai'
+
 "js
 Bundle 'maksimr/vim-jsbeautify'
 Bundle 'einars/js-beautify'
