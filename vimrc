@@ -25,7 +25,9 @@ Bundle 'groenewege/vim-less'
 
 Bundle 'molokai'
 
+"JSHint {file}
 Bundle 'walm/jshint.vim'
+map <Leader>jh :JSHint <cr>
 "js
 Bundle 'maksimr/vim-jsbeautify'
 Bundle 'einars/js-beautify'
