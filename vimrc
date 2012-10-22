@@ -25,6 +25,7 @@ Bundle 'groenewege/vim-less'
 
 Bundle 'molokai'
 
+Bundle 'walm/jshint.vim'
 "js
 Bundle 'maksimr/vim-jsbeautify'
 Bundle 'einars/js-beautify'
@@ -39,7 +40,7 @@ let g:cssbeautify = {'indent_size': 2, 'indent_char': ' '}
 map <Leader>jf :call JsBeautify()<cr>
 "end js
 "http://vim.wikia.com/wiki/How_to_stop_auto_indenting
-nnoremap <F8> :setl nocindent smartindent<CR>
+nnoremap <F8> :setl noai nocin nosi inde=<CR>
 
 
 filetype plugin indent on
