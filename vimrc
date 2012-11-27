@@ -12,8 +12,8 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'ervandew/supertab'
 
 Bundle 'tpope/vim-rails'
-Bundle 'msanders/snipmate.vim'
-Bundle 'akitaonrails/snipmate-snippets'
+Bundle 'mangege/snipmate.vim'
+Bundle 'mangege/snipmate-snippets'
 Bundle 'scrooloose/syntastic'
 Bundle 'slimv.vim'
 Bundle 'gnupg.vim'
@@ -28,19 +28,7 @@ Bundle 'molokai'
 "JSHint {file}
 Bundle 'walm/jshint.vim'
 map <Leader>jh :JSHint <cr>
-"js
-Bundle 'maksimr/vim-jsbeautify'
-Bundle 'einars/js-beautify'
-" set path to js-beautify file
-let s:rootDir = fnamemodify(expand("<sfile>"), ":h")
-let g:jsbeautify_file = fnameescape($HOME."/.vim/bundle/js-beautify/beautify.js")
-let g:htmlbeautify_file = fnameescape($HOME."/.vim/bundle/js-beautify/beautify-html.js")
-let g:cssbeautify_file = fnameescape($HOME."/.vim/bundle/js-beautify/beautify-css.js")
-let g:jsbeautify = {'indent_size': 2, 'indent_char': ' '}
-let g:htmlbeautify = {'indent_size': 2, 'indent_char': ' ', 'max_char': 78, 'brace_style': 'expand', 'unformatted': ['a', 'sub', 'sup', 'b', 'i', 'u']}
-let g:cssbeautify = {'indent_size': 2, 'indent_char': ' '}
-map <Leader>jf :call JsBeautify()<cr>
-"end js
+
 "http://vim.wikia.com/wiki/How_to_stop_auto_indenting
 nnoremap <F8> :setl noai nocin nosi inde=<CR>
 
