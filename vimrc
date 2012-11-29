@@ -145,7 +145,6 @@ source ~/.vim/bundle/snipmate-snippets/support_functions.vim
 autocmd vimenter * call s:SetupSnippets()
 function! s:SetupSnippets()
     call ExtractSnips("~/.vim/bundle/snipmate-snippets/html", "eruby")
-    call ExtractSnips("~/.vim/bundle/snipmate-snippets/html", "xhtml")
 endfunction
 
 "off paredit
