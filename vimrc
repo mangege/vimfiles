@@ -15,7 +15,6 @@ Bundle 'tpope/vim-rails'
 Bundle 'mangege/snipmate.vim'
 Bundle 'mangege/snipmate-snippets'
 Bundle 'scrooloose/syntastic'
-Bundle 'slimv.vim'
 Bundle 'gnupg.vim'
 
 Bundle 'hallison/vim-markdown'
@@ -27,7 +26,8 @@ Bundle 'molokai'
 
 "JSHint {file}
 Bundle 'walm/jshint.vim'
-Bundle 'scharron/web-indent' "http://www.vim.org/scripts/script.php?script_id=3081
+Bundle 'scharron/web-indent'
+"http://www.vim.org/scripts/script.php?script_id=3081
 map <Leader>jh :JSHint <cr>
 
 "http://vim.wikia.com/wiki/How_to_stop_auto_indenting
