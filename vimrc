@@ -27,6 +27,7 @@ Bundle 'molokai'
 
 "JSHint {file}
 Bundle 'walm/jshint.vim'
+Bundle 'scharron/web-indent' "http://www.vim.org/scripts/script.php?script_id=3081
 map <Leader>jh :JSHint <cr>
 
 "http://vim.wikia.com/wiki/How_to_stop_auto_indenting
