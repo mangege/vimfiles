@@ -26,7 +26,7 @@ Bundle 'molokai'
 
 "JSHint {file}
 Bundle 'walm/jshint.vim'
-Bundle 'scharron/web-indent'
+Bundle 'mangege/web-indent'
 "http://www.vim.org/scripts/script.php?script_id=3081
 map <Leader>jh :JSHint <cr>
 
