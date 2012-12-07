@@ -10,20 +10,17 @@ Bundle 'gmarik/vundle'
 Bundle 'mileszs/ack.vim' 
 Bundle 'scrooloose/nerdtree'
 Bundle 'ervandew/supertab'
-
 Bundle 'tpope/vim-rails'
 Bundle 'mangege/snipmate.vim'
 Bundle 'mangege/snipmate-snippets'
 Bundle 'scrooloose/syntastic'
 Bundle 'gnupg.vim'
-
 Bundle 'hallison/vim-markdown'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'groenewege/vim-less'
-
 Bundle 'molokai'
-
+Bundle 'vimwiki'
 "JSHint {file}
 Bundle 'walm/jshint.vim'
 Bundle 'mangege/web-indent'
