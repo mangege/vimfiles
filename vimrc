@@ -30,7 +30,6 @@ map <Leader>jh :JSHint <cr>
 "http://vim.wikia.com/wiki/How_to_stop_auto_indenting
 nnoremap <F8> :setl noai nocin nosi inde=<CR>
 
-
 filetype plugin indent on
 "end vundle
 
@@ -157,3 +156,5 @@ set fileencodings=utf-8,gb2312,gbk,gb18030,default,latinl
 "set termencoding=utf-8
 set fileformats=unix,dos
 "set encoding=prc
+
+set directory=~/tmp/vim,/tmp
