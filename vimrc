@@ -21,6 +21,7 @@ Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'groenewege/vim-less'
 Bundle 'molokai'
 Bundle 'vimwiki'
+Bundle 'taglist.vim'
 "JSHint {file}
 Bundle 'walm/jshint.vim'
 Bundle 'mangege/web-indent'
@@ -158,3 +159,7 @@ set fileformats=unix,dos
 "set encoding=prc
 
 set directory=~/tmp/vim,/tmp
+
+"taglist.vim
+let Tlist_Show_One_File=1
+let Tlist_Use_Right_Window=1
