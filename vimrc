@@ -64,10 +64,8 @@ set linespace=4
 set visualbell t_vb=
 
 "indent settings 缩进
-set shiftwidth=2
-set softtabstop=2
-set expandtab
-set autoindent
+set tabstop=8 expandtab shiftwidth=4 softtabstop=4
+au FileType ruby setlocal tabstop=4 expandtab shiftwidth=2 softtabstop=2
 
 "folding settings 折叠
 set foldmethod=indent   "fold based on indent
