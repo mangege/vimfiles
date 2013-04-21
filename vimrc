@@ -22,9 +22,12 @@ Bundle 'groenewege/vim-less'
 Bundle 'molokai'
 Bundle 'vimwiki'
 Bundle 'taglist.vim'
+Bundle 'nvie/vim-flake8'
 "JSHint {file}
 Bundle 'walm/jshint.vim'
 Bundle 'mangege/web-indent'
+Bundle 'pythoncomplete'
+Bundle 'hynek/vim-python-pep8-indent'
 "http://www.vim.org/scripts/script.php?script_id=3081
 map <Leader>jh :JSHint <cr>
 
@@ -66,6 +69,7 @@ set visualbell t_vb=
 "indent settings 缩进
 set tabstop=8 expandtab shiftwidth=4 softtabstop=4
 au FileType ruby setlocal tabstop=4 expandtab shiftwidth=2 softtabstop=2
+au FileType python setlocal et sta sw=4 sts=4
 
 "folding settings 折叠
 set foldmethod=indent   "fold based on indent
