@@ -69,7 +69,9 @@ set visualbell t_vb=
 "indent settings 缩进
 set tabstop=8 expandtab shiftwidth=4 softtabstop=4
 au FileType ruby setlocal tabstop=4 expandtab shiftwidth=2 softtabstop=2
+au FileType yaml setlocal tabstop=4 expandtab shiftwidth=2 softtabstop=2
 au FileType python setlocal et sta sw=4 sts=4
+au FileType javascript setlocal et sta sw=4 sts=4
 
 "folding settings 折叠
 set foldmethod=indent   "fold based on indent
