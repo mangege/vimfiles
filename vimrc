@@ -28,6 +28,8 @@ Bundle 'walm/jshint.vim'
 Bundle 'mangege/web-indent'
 Bundle 'pythoncomplete'
 Bundle 'hynek/vim-python-pep8-indent'
+Bundle 'yaymukund/vim-rabl'
+
 "http://www.vim.org/scripts/script.php?script_id=3081
 map <Leader>jh :JSHint <cr>
 
