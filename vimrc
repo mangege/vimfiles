@@ -23,6 +23,7 @@ Bundle 'molokai'
 Bundle 'vimwiki'
 Bundle 'taglist.vim'
 Bundle 'nvie/vim-flake8'
+Bundle 'Rip-Rip/clang_complete'
 "JSHint {file}
 Bundle 'walm/jshint.vim'
 Bundle 'mangege/web-indent'
