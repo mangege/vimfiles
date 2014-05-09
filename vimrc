@@ -43,11 +43,13 @@ filetype plugin indent on
 
 syntax on
 
-"if &term == 'gnome-256color'  || &term == 'rxvt-unicode-256color'
 if $COLORTERM == 'gnome-terminal' || $COLORTERM == 'rxvt-xpm'
   set term=gnome-256color 
   let g:molokai_original = 1
-  colorscheme molokai 
+  colorscheme molokai
+elseif &term == 'xterm-256color'
+  let g:molokai_original = 1
+  colorscheme molokai
 else 
   colorscheme elflord 
 endif 
@@ -117,7 +119,16 @@ nmap <C-s> :w<CR>
 "nmap <S-Tab> gT
 
 "Ack 搜索插件设置
-let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+if executable("ack")
+    let g:ackprg="ack -H --nocolor --nogroup --column"
+else
+    let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+endif
+
+"ctag
+if executable("/usr/local/bin/ctags")
+    let Tlist_Ctags_Cmd="/usr/local/bin/ctags"
+endif
 
 "ragtag 快速输入eruby 标签
 let g:ragtag_global_maps = 1 
