@@ -177,8 +177,6 @@ set fileencodings=utf-8,gb2312,gbk,gb18030,default,latinl
 set fileformats=unix,dos
 "set encoding=prc
 
-set directory=~/tmp/vim,/tmp
-
 "taglist.vim
 let Tlist_Show_One_File=1
 let Tlist_Use_Right_Window=1
