@@ -43,21 +43,14 @@ filetype plugin indent on
 
 syntax on
 
-if $COLORTERM == 'gnome-terminal' || $COLORTERM == 'rxvt-xpm'
-  set term=gnome-256color 
-  let g:molokai_original = 1
-  colorscheme molokai
-elseif &term == 'xterm-256color'
-  let g:molokai_original = 1
-  colorscheme molokai
-else 
-  colorscheme elflord 
-endif 
+set term=xterm-256color
+let g:molokai_original = 1
+colorscheme molokai
 
 "store lots of :cmdline history 保存命令历史
 set history=1000
 
-set mouse=a
+set mouse=v
 
 set showcmd "show incomplete cmds down the bottom 显示正在输入的命令
 set showmode "show current mode down the bottom 显示当前模式
