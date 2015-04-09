@@ -26,11 +26,13 @@ Bundle 'nvie/vim-flake8'
 Bundle 'Rip-Rip/clang_complete'
 "JSHint {file}
 Bundle 'walm/jshint.vim'
+Bundle 'maksimr/vim-jsbeautify'
 Bundle 'mangege/web-indent'
 Bundle 'pythoncomplete'
 Bundle 'hynek/vim-python-pep8-indent'
 Bundle 'yaymukund/vim-rabl'
 Bundle 'kien/ctrlp.vim'
+Bundle 'saltstack/salt-vim'
 
 "http://www.vim.org/scripts/script.php?script_id=3081
 map <Leader>jh :JSHint <cr>
@@ -182,3 +184,11 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\v\.(exe|so|dll|pyc)$',
   \ 'link': '',
   \ }
+
+
+" maksimr/vim-jsbeautify
+autocmd FileType javascript noremap <buffer>  <Leader>f :call JsBeautify()<cr>
+" for html
+autocmd FileType html noremap <buffer> <Leader>f :call HtmlBeautify()<cr>
+" for css or scss
+autocmd FileType css noremap <buffer> <Leader>f :call CSSBeautify()<cr>
