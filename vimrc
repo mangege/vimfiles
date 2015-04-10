@@ -17,6 +17,7 @@ Plugin 'kien/ctrlp.vim'
 
 Plugin 'tpope/vim-rails'
 Plugin 'nvie/vim-flake8'
+Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'Rip-Rip/clang_complete'
 
 " sytle
