@@ -7,6 +7,7 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 
+Plugin 'vimcn/vimcdoc'
 Plugin 'molokai'
 Plugin 'mileszs/ack.vim' 
 Plugin 'scrooloose/nerdtree'
