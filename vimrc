@@ -42,6 +42,7 @@ filetype plugin indent on
 syntax on
 
 set term=xterm-256color
+colorscheme zellner
 
 set history=1000
 set mouse=v
