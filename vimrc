@@ -14,6 +14,7 @@ Plugin 'ervandew/supertab'
 Plugin 'scrooloose/syntastic'
 Plugin 'taglist.vim'
 Plugin 'kien/ctrlp.vim'
+Plugin 'altercation/vim-colors-solarized'
 
 Plugin 'tpope/vim-rails'
 Plugin 'nvie/vim-flake8'
@@ -42,7 +43,9 @@ filetype plugin indent on
 syntax on
 
 set term=xterm-256color
-colorscheme zellner
+let g:solarized_termcolors=256
+set background=light
+colorscheme solarized
 
 set history=1000
 set mouse=v
