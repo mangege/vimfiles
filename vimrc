@@ -8,7 +8,6 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'vimcn/vimcdoc'
-Plugin 'molokai'
 Plugin 'mileszs/ack.vim' 
 Plugin 'scrooloose/nerdtree'
 Plugin 'ervandew/supertab'
@@ -43,8 +42,6 @@ filetype plugin indent on
 syntax on
 
 set term=xterm-256color
-let g:molokai_original = 1
-colorscheme molokai
 
 set history=1000
 set mouse=v
