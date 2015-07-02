@@ -29,7 +29,6 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'groenewege/vim-less'
 
 " JS
-Plugin 'walm/jshint.vim'
 Plugin 'maksimr/vim-jsbeautify'
 
 " snipmate
