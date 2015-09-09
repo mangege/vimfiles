@@ -43,7 +43,7 @@ syntax on
 
 set term=xterm-256color
 let g:solarized_termcolors=256
-set background=light
+set background=dark
 colorscheme solarized
 
 set history=1000
