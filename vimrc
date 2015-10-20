@@ -156,3 +156,8 @@ autocmd FileType css noremap <buffer> <Leader>f :call CSSBeautify()<cr>
 
 " http://www.vim.org/scripts/script.php?script_id=3081
 autocmd FileType javascript noremap <buffer> <Leader>j :JSHint<cr>
+
+let s:clang_library_path='/Library/Developer/CommandLineTools/usr/lib'
+if isdirectory(s:clang_library_path)
+    let g:clang_library_path=s:clang_library_path
+endif
