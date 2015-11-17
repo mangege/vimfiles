@@ -16,13 +16,11 @@ Plugin 'taglist.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'altercation/vim-colors-solarized'
 
-Plugin 'tpope/vim-rails'
 Plugin 'nvie/vim-flake8'
 Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'Rip-Rip/clang_complete'
 
 " sytle
-Plugin 'saltstack/salt-vim'
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'hallison/vim-markdown'
 Plugin 'kchmck/vim-coffee-script'
@@ -156,6 +154,8 @@ autocmd FileType css noremap <buffer> <Leader>f :call CSSBeautify()<cr>
 
 " http://www.vim.org/scripts/script.php?script_id=3081
 autocmd FileType javascript noremap <buffer> <Leader>j :JSHint<cr>
+
+autocmd filetype crontab setlocal nobackup nowritebackup
 
 let s:clang_library_path='/Library/Developer/CommandLineTools/usr/lib'
 if isdirectory(s:clang_library_path)
