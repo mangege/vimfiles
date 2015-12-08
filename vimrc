@@ -41,7 +41,7 @@ syntax on
 
 set term=xterm-256color
 let g:solarized_termcolors=256
-set background=dark
+set background=light
 colorscheme solarized
 
 set history=1000
@@ -58,7 +58,7 @@ au FileType ruby setlocal tabstop=4 expandtab shiftwidth=2 softtabstop=2
 au FileType eruby setlocal tabstop=4 expandtab shiftwidth=2 softtabstop=2
 au FileType yaml setlocal tabstop=4 expandtab shiftwidth=2 softtabstop=2
 au FileType python setlocal et sta sw=4 sts=4
-au FileType javascript setlocal et sta sw=4 sts=4
+au FileType javascript setlocal et sta sw=2 sts=2
 
 set foldmethod=indent
 set foldnestmax=3
