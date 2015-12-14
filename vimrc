@@ -161,3 +161,6 @@ let s:clang_library_path='/Library/Developer/CommandLineTools/usr/lib'
 if isdirectory(s:clang_library_path)
     let g:clang_library_path=s:clang_library_path
 endif
+
+" http://stackoverflow.com/questions/6009698/autocmd-check-filename-in-vim
+autocmd FileType ruby if filereadable("config/application.rb") | UltiSnipsAddFiletypes rails.ruby
