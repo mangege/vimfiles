@@ -18,7 +18,6 @@ Plugin 'tomasr/molokai'
 
 Plugin 'nvie/vim-flake8'
 Plugin 'hynek/vim-python-pep8-indent'
-Plugin 'Rip-Rip/clang_complete'
 
 " sytle
 Plugin 'cakebaker/scss-syntax.vim'
@@ -32,6 +31,10 @@ Plugin 'maksimr/vim-jsbeautify'
 " snipmate
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+
+Plugin 'tmatilai/vim-monit'
+
+Plugin 'fatih/vim-go'
 
 call vundle#end()
 filetype plugin indent on
@@ -53,11 +56,13 @@ set linespace=4
 set visualbell t_vb=
 
 set tabstop=8 expandtab shiftwidth=4 softtabstop=4
-au FileType ruby setlocal tabstop=4 expandtab shiftwidth=2 softtabstop=2
-au FileType eruby setlocal tabstop=4 expandtab shiftwidth=2 softtabstop=2
-au FileType yaml setlocal tabstop=4 expandtab shiftwidth=2 softtabstop=2
-au FileType python setlocal et sta sw=4 sts=4
-au FileType javascript setlocal et sta sw=2 sts=2
+autocmd FileType ruby setlocal tabstop=4 expandtab shiftwidth=2 softtabstop=2
+autocmd FileType eruby setlocal tabstop=4 expandtab shiftwidth=2 softtabstop=2
+autocmd FileType yaml setlocal tabstop=4 expandtab shiftwidth=2 softtabstop=2
+autocmd FileType python setlocal et sta sw=4 sts=4
+autocmd FileType javascript setlocal et sta sw=2 sts=2
+
+autocmd FileType go setlocal shiftwidth=8 tabstop=8 softtabstop=8 noexpandtab
 
 set foldmethod=indent
 set foldnestmax=3
@@ -154,12 +159,9 @@ autocmd FileType css noremap <buffer> <Leader>f :call CSSBeautify()<cr>
 " http://www.vim.org/scripts/script.php?script_id=3081
 autocmd FileType javascript noremap <buffer> <Leader>j :JSHint<cr>
 
-autocmd filetype crontab setlocal nobackup nowritebackup
+autocmd FileType crontab setlocal nobackup nowritebackup
 
-let s:clang_library_path='/Library/Developer/CommandLineTools/usr/lib'
-if isdirectory(s:clang_library_path)
-    let g:clang_library_path=s:clang_library_path
-endif
+autocmd BufNewFile,BufRead *.rabl setfiletype ruby
 
 " http://stackoverflow.com/questions/6009698/autocmd-check-filename-in-vim
 autocmd FileType ruby if filereadable("config/application.rb") | UltiSnipsAddFiletypes rails.ruby
