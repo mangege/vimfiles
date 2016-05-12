@@ -32,9 +32,13 @@ Plugin 'maksimr/vim-jsbeautify'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 
+Plugin 'tpope/vim-surround'
+
 Plugin 'tmatilai/vim-monit'
 
 Plugin 'fatih/vim-go'
+
+Plugin 'posva/vim-vue'
 
 call vundle#end()
 filetype plugin indent on
@@ -165,3 +169,5 @@ autocmd BufNewFile,BufRead *.rabl setfiletype ruby
 
 " http://stackoverflow.com/questions/6009698/autocmd-check-filename-in-vim
 autocmd FileType ruby if filereadable("config/application.rb") | UltiSnipsAddFiletypes rails.ruby
+
+autocmd FileType vue UltiSnipsAddFiletypes html.javascript.css
