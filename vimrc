@@ -35,10 +35,10 @@ Plugin 'honza/vim-snippets'
 Plugin 'tpope/vim-surround'
 
 Plugin 'tmatilai/vim-monit'
-
 Plugin 'fatih/vim-go'
-
 Plugin 'posva/vim-vue'
+Plugin 'jinja'
+Plugin 'mustache/vim-mustache-handlebars'
 
 call vundle#end()
 filetype plugin indent on
@@ -167,6 +167,8 @@ autocmd FileType javascript noremap <buffer> <Leader>j :JSHint<cr>
 autocmd FileType crontab setlocal nobackup nowritebackup
 
 autocmd BufNewFile,BufRead *.rabl setfiletype ruby
+autocmd BufNewFile,BufRead *.j2 setfiletype jinja
+autocmd BufNewFile,BufRead *.es6 setfiletype jinja
 
 " http://stackoverflow.com/questions/6009698/autocmd-check-filename-in-vim
 autocmd FileType ruby if filereadable("config/application.rb") | UltiSnipsAddFiletypes rails.ruby
