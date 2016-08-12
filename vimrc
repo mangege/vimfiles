@@ -168,7 +168,7 @@ autocmd FileType crontab setlocal nobackup nowritebackup
 
 autocmd BufNewFile,BufRead *.rabl setfiletype ruby
 autocmd BufNewFile,BufRead *.j2 setfiletype jinja
-autocmd BufNewFile,BufRead *.es6 setfiletype jinja
+autocmd BufNewFile,BufRead *.es6 setfiletype javascript
 
 " http://stackoverflow.com/questions/6009698/autocmd-check-filename-in-vim
 autocmd FileType ruby if filereadable("config/application.rb") | UltiSnipsAddFiletypes rails.ruby
