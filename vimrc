@@ -5,7 +5,7 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'gmarik/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'vimcn/vimcdoc'
 Plugin 'mileszs/ack.vim' 
@@ -39,6 +39,8 @@ Plugin 'fatih/vim-go'
 Plugin 'posva/vim-vue'
 Plugin 'jinja'
 Plugin 'mustache/vim-mustache-handlebars'
+
+Plugin 'rust-lang/rust.vim'
 
 call vundle#end()
 filetype plugin indent on
