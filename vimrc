@@ -169,10 +169,12 @@ autocmd FileType javascript noremap <buffer> <Leader>j :JSHint<cr>
 autocmd FileType crontab setlocal nobackup nowritebackup
 
 autocmd BufNewFile,BufRead *.rabl setfiletype ruby
+autocmd BufNewFile,BufRead *.jbuilder setfiletype ruby
 autocmd BufNewFile,BufRead *.j2 setfiletype jinja
 autocmd BufNewFile,BufRead *.es6 setfiletype javascript
+autocmd BufRead,BufNewFile *.raml if &ft == 'conf' | set ft=yaml | endif
 
 " http://stackoverflow.com/questions/6009698/autocmd-check-filename-in-vim
-autocmd FileType ruby if filereadable("config/application.rb") | UltiSnipsAddFiletypes rails.ruby
+"autocmd FileType ruby if filereadable("config/application.rb") | UltiSnipsAddFiletypes rails.ruby
 
 autocmd FileType vue UltiSnipsAddFiletypes html.javascript.css
