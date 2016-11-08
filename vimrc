@@ -172,6 +172,7 @@ autocmd BufNewFile,BufRead *.rabl setfiletype ruby
 autocmd BufNewFile,BufRead *.jbuilder setfiletype ruby
 autocmd BufNewFile,BufRead *.j2 setfiletype jinja
 autocmd BufNewFile,BufRead *.es6 setfiletype javascript
+" 已经被检测到文件类型了,必须加 if 才会生效 http://vimcdoc.sourceforge.net/doc/syntax.html#ft-aspvbs-syntax
 autocmd BufRead,BufNewFile *.raml if &ft == 'conf' | set ft=yaml | endif
 
 " http://stackoverflow.com/questions/6009698/autocmd-check-filename-in-vim
