@@ -19,6 +19,8 @@ Plugin 'tomasr/molokai'
 Plugin 'nvie/vim-flake8'
 Plugin 'hynek/vim-python-pep8-indent'
 
+Plugin 'tpope/vim-rails'
+
 " sytle
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'hallison/vim-markdown'
@@ -177,5 +179,6 @@ autocmd BufRead,BufNewFile *.raml if &ft == 'conf' | set ft=yaml | endif
 
 " http://stackoverflow.com/questions/6009698/autocmd-check-filename-in-vim
 "autocmd FileType ruby if filereadable("config/application.rb") | UltiSnipsAddFiletypes rails.ruby
+autocmd FileType yaml if filereadable("config/application.rb") | UltiSnipsAddFiletypes yaml.eruby
 
 autocmd FileType vue UltiSnipsAddFiletypes html.javascript.css
