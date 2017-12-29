@@ -19,16 +19,11 @@ Plugin 'tomasr/molokai'
 Plugin 'nvie/vim-flake8'
 Plugin 'hynek/vim-python-pep8-indent'
 
+Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 
 " sytle
-Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'hallison/vim-markdown'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'groenewege/vim-less'
-
-" JS
-Plugin 'maksimr/vim-jsbeautify'
 
 " snipmate
 Plugin 'SirVer/ultisnips'
@@ -36,13 +31,7 @@ Plugin 'honza/vim-snippets'
 
 Plugin 'tpope/vim-surround'
 
-Plugin 'tmatilai/vim-monit'
-Plugin 'fatih/vim-go'
 Plugin 'posva/vim-vue'
-Plugin 'jinja'
-Plugin 'mustache/vim-mustache-handlebars'
-
-Plugin 'rust-lang/rust.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -149,24 +138,8 @@ map <Leader>t :tabnew %<CR>
 
 nnoremap <F12> :nohlsearch<CR> 
 
-"key mapping for window navigation 映射窗口切换快捷键
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
-
 "key mapping for saving file 映射C-S快速保存文件
 nmap <C-s> :w<CR>
-
-" maksimr/vim-jsbeautify
-autocmd FileType javascript noremap <buffer>  <Leader>f :call JsBeautify()<cr>
-" for html
-autocmd FileType html noremap <buffer> <Leader>f :call HtmlBeautify()<cr>
-" for css or scss
-autocmd FileType css noremap <buffer> <Leader>f :call CSSBeautify()<cr>
-
-" http://www.vim.org/scripts/script.php?script_id=3081
-autocmd FileType javascript noremap <buffer> <Leader>j :JSHint<cr>
 
 autocmd FileType crontab setlocal nobackup nowritebackup
 
