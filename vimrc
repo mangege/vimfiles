@@ -14,7 +14,7 @@ Plugin 'ervandew/supertab'
 Plugin 'scrooloose/syntastic'
 Plugin 'taglist.vim'
 Plugin 'kien/ctrlp.vim'
-Plugin 'tomasr/molokai'
+Plugin 'sickill/vim-monokai'
 
 Plugin 'nvie/vim-flake8'
 Plugin 'hynek/vim-python-pep8-indent'
@@ -32,6 +32,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'tpope/vim-surround'
 
 Plugin 'posva/vim-vue'
+Plugin 'digitaltoad/vim-pug'
 
 call vundle#end()
 filetype plugin indent on
@@ -40,8 +41,7 @@ filetype plugin indent on
 syntax on
 
 set term=xterm-256color
-let g:molokai_original = 1
-colorscheme molokai
+colorscheme monokai
 
 set history=1000
 set mouse=v
@@ -115,7 +115,7 @@ let NERDTreeIgnore = ['\.pyc$']
 
 "ctrlp.vim
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]bundle',
+  \ 'dir':  '\.git$\|\.yardoc\|node_modules\|log\|tmp\|bundle\|stickers$',
   \ 'file': '\v\.(exe|so|dll|pyc)$',
   \ 'link': '',
   \ }
