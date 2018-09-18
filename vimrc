@@ -115,7 +115,7 @@ let NERDTreeIgnore = ['\.pyc$']
 
 "ctrlp.vim
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\.git$\|\.yardoc\|node_modules\|log\|tmp\|bundle\|stickers$',
+  \ 'dir':  '\.git$\|\.yardoc\|node_modules\|log\|tmp\|bundle\|stickers\|system\|contents\|datas',
   \ 'file': '\v\.(exe|so|dll|pyc)$',
   \ 'link': '',
   \ }
