@@ -34,6 +34,8 @@ Plugin 'tpope/vim-surround'
 Plugin 'posva/vim-vue'
 Plugin 'digitaltoad/vim-pug'
 
+Plugin 'dag/vim-fish'
+
 call vundle#end()
 filetype plugin indent on
 "end vundle
@@ -148,7 +150,8 @@ autocmd BufNewFile,BufRead *.jbuilder setfiletype ruby
 autocmd BufNewFile,BufRead *.j2 setfiletype jinja
 autocmd BufNewFile,BufRead *.es6 setfiletype javascript
 " 已经被检测到文件类型了,必须加 if 才会生效 http://vimcdoc.sourceforge.net/doc/syntax.html#ft-aspvbs-syntax
-autocmd BufRead,BufNewFile *.raml if &ft == 'conf' | set ft=yaml | endif
+autocmd BufNewFile,BufRead *.raml if &ft == 'conf' | set ft=yaml | endif
+autocmd BufNewFile,BufRead *.amp.erb if &ft == 'eruby' | set ft=eruby.html | endif
 
 " http://stackoverflow.com/questions/6009698/autocmd-check-filename-in-vim
 "autocmd FileType ruby if filereadable("config/application.rb") | UltiSnipsAddFiletypes rails.ruby
