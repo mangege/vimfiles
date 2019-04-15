@@ -34,7 +34,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'posva/vim-vue'
 Plugin 'digitaltoad/vim-pug'
 
-Plugin 'dag/vim-fish'
+Plugin 'fatih/vim-go'
 
 call vundle#end()
 filetype plugin indent on
