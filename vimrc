@@ -59,8 +59,8 @@ autocmd FileType ruby setlocal tabstop=4 expandtab shiftwidth=2 softtabstop=2
 autocmd FileType eruby setlocal tabstop=4 expandtab shiftwidth=2 softtabstop=2
 autocmd FileType yaml setlocal tabstop=4 expandtab shiftwidth=2 softtabstop=2
 autocmd FileType python setlocal et sta sw=4 sts=4
-autocmd FileType javascript setlocal et sta sw=2 sts=2
-autocmd FileType vue setlocal tabstop=4 expandtab shiftwidth=2 softtabstop=2
+autocmd FileType javascript setlocal et sta sw=4 sts=4
+autocmd FileType vue setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
 
 autocmd FileType go setlocal shiftwidth=8 tabstop=8 softtabstop=8 noexpandtab
 
