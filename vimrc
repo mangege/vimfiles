@@ -15,6 +15,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'taglist.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'sickill/vim-monokai'
+Plugin 'altercation/vim-colors-solarized'
 
 Plugin 'nvie/vim-flake8'
 Plugin 'hynek/vim-python-pep8-indent'
@@ -42,8 +43,10 @@ filetype plugin indent on
 
 syntax on
 
-set term=xterm-256color
-colorscheme monokai
+" set term=xterm-256color
+let g:solarized_termcolors=256
+set background=light
+colorscheme solarized
 
 set history=1000
 set mouse=v
