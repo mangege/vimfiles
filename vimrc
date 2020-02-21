@@ -24,7 +24,7 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 
 " sytle
-Plugin 'hallison/vim-markdown'
+Plugin 'plasticboy/vim-markdown'
 
 " snipmate
 Plugin 'SirVer/ultisnips'
