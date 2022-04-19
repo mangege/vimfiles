@@ -32,16 +32,20 @@ Plugin 'honza/vim-snippets'
 
 Plugin 'tpope/vim-surround'
 
-Plugin 'posva/vim-vue'
 Plugin 'digitaltoad/vim-pug'
 
 Plugin 'fatih/vim-go'
+
+Plugin 'prettier/vim-prettier'
 
 call vundle#end()
 filetype plugin indent on
 "end vundle
 
 syntax on
+
+let g:prettier#autoformat = 0
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue PrettierAsync
 
 " set term=xterm-256color
 let g:solarized_termcolors=256
@@ -62,9 +66,7 @@ autocmd FileType ruby setlocal tabstop=4 expandtab shiftwidth=2 softtabstop=2
 autocmd FileType eruby setlocal tabstop=4 expandtab shiftwidth=2 softtabstop=2
 autocmd FileType yaml setlocal tabstop=4 expandtab shiftwidth=2 softtabstop=2
 autocmd FileType python setlocal et sta sw=4 sts=4
-autocmd FileType javascript setlocal et sta sw=4 sts=4
-autocmd FileType vue setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
-
+autocmd FileType typescript setlocal et sta sw=2 sts=2
 autocmd FileType go setlocal shiftwidth=8 tabstop=8 softtabstop=8 noexpandtab
 
 set foldmethod=indent
@@ -151,7 +153,6 @@ autocmd FileType crontab setlocal nobackup nowritebackup
 autocmd BufNewFile,BufRead *.rabl setfiletype ruby
 autocmd BufNewFile,BufRead *.jbuilder setfiletype ruby
 autocmd BufNewFile,BufRead *.j2 setfiletype jinja
-autocmd BufNewFile,BufRead *.es6 setfiletype javascript
 " 已经被检测到文件类型了,必须加 if 才会生效 http://vimcdoc.sourceforge.net/doc/syntax.html#ft-aspvbs-syntax
 autocmd BufNewFile,BufRead *.raml if &ft == 'conf' | set ft=yaml | endif
 autocmd BufNewFile,BufRead *.amp.erb if &ft == 'eruby' | set ft=eruby.html | endif
@@ -159,5 +160,3 @@ autocmd BufNewFile,BufRead *.amp.erb if &ft == 'eruby' | set ft=eruby.html | end
 " http://stackoverflow.com/questions/6009698/autocmd-check-filename-in-vim
 "autocmd FileType ruby if filereadable("config/application.rb") | UltiSnipsAddFiletypes rails.ruby
 autocmd FileType yaml if filereadable("config/application.rb") | UltiSnipsAddFiletypes yaml.eruby
-
-autocmd FileType vue UltiSnipsAddFiletypes html.javascript.css
