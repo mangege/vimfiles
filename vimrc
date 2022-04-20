@@ -14,7 +14,6 @@ Plugin 'ervandew/supertab'
 Plugin 'scrooloose/syntastic'
 Plugin 'taglist.vim'
 Plugin 'kien/ctrlp.vim'
-Plugin 'sickill/vim-monokai'
 Plugin 'altercation/vim-colors-solarized'
 
 Plugin 'nvie/vim-flake8'
@@ -31,8 +30,6 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 
 Plugin 'tpope/vim-surround'
-
-Plugin 'digitaltoad/vim-pug'
 
 Plugin 'fatih/vim-go'
 
@@ -66,7 +63,6 @@ autocmd FileType ruby setlocal tabstop=4 expandtab shiftwidth=2 softtabstop=2
 autocmd FileType eruby setlocal tabstop=4 expandtab shiftwidth=2 softtabstop=2
 autocmd FileType yaml setlocal tabstop=4 expandtab shiftwidth=2 softtabstop=2
 autocmd FileType python setlocal et sta sw=4 sts=4
-autocmd FileType typescript setlocal et sta sw=2 sts=2
 autocmd FileType go setlocal shiftwidth=8 tabstop=8 softtabstop=8 noexpandtab
 
 set foldmethod=indent
