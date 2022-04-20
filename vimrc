@@ -2,40 +2,37 @@ set nocompatible
 
 "vundle
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin()
 
-Plugin 'VundleVim/Vundle.vim'
+Plug 'vimcn/vimcdoc'
+Plug 'mileszs/ack.vim' 
+Plug 'preservim/nerdtree'
+Plug 'ervandew/supertab'
+Plug 'vim-syntastic/syntastic'
+Plug 'vim-scripts/taglist.vim'
+Plug 'kien/ctrlp.vim'
+Plug 'altercation/vim-colors-solarized'
 
-Plugin 'vimcn/vimcdoc'
-Plugin 'mileszs/ack.vim' 
-Plugin 'scrooloose/nerdtree'
-Plugin 'ervandew/supertab'
-Plugin 'scrooloose/syntastic'
-Plugin 'taglist.vim'
-Plugin 'kien/ctrlp.vim'
-Plugin 'altercation/vim-colors-solarized'
+Plug 'nvie/vim-flake8'
+Plug 'hynek/vim-python-pep8-indent'
 
-Plugin 'nvie/vim-flake8'
-Plugin 'hynek/vim-python-pep8-indent'
-
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'tpope/vim-rails'
+Plug 'vim-ruby/vim-ruby'
+Plug 'tpope/vim-rails'
 
 " sytle
-Plugin 'plasticboy/vim-markdown'
+Plug 'plasticboy/vim-markdown'
 
 " snipmate
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 
-Plugin 'tpope/vim-surround'
+Plug 'tpope/vim-surround'
 
-Plugin 'fatih/vim-go'
+Plug 'fatih/vim-go'
 
-Plugin 'prettier/vim-prettier'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
 
-call vundle#end()
+call plug#end()
 filetype plugin indent on
 "end vundle
 
