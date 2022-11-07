@@ -19,9 +19,6 @@ Plug 'hynek/vim-python-pep8-indent'
 Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-rails'
 
-" sytle
-Plug 'plasticboy/vim-markdown'
-
 " snipmate
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
