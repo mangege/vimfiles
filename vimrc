@@ -30,6 +30,8 @@ Plug 'tpope/vim-surround'
 
 Plug 'fatih/vim-go'
 
+Plug 'tomlion/vim-solidity'
+
 Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
 
 call plug#end()
@@ -55,10 +57,8 @@ set wrap linebreak nolist
 set linespace=4
 set visualbell t_vb=
 
-set tabstop=8 expandtab shiftwidth=4 softtabstop=4
+set tabstop=4 expandtab shiftwidth=2 softtabstop=2
 autocmd FileType ruby setlocal tabstop=4 expandtab shiftwidth=2 softtabstop=2
-autocmd FileType eruby setlocal tabstop=4 expandtab shiftwidth=2 softtabstop=2
-autocmd FileType yaml setlocal tabstop=4 expandtab shiftwidth=2 softtabstop=2
 autocmd FileType python setlocal et sta sw=4 sts=4
 autocmd FileType go setlocal shiftwidth=8 tabstop=8 softtabstop=8 noexpandtab
 
