@@ -56,6 +56,7 @@ set visualbell t_vb=
 
 set tabstop=4 expandtab shiftwidth=2 softtabstop=2
 autocmd FileType ruby setlocal tabstop=4 expandtab shiftwidth=2 softtabstop=2
+autocmd FileType markdown setlocal tabstop=4 expandtab shiftwidth=2 softtabstop=2
 autocmd FileType python setlocal et sta sw=4 sts=4
 autocmd FileType go setlocal shiftwidth=8 tabstop=8 softtabstop=8 noexpandtab
 
