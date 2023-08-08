@@ -4,14 +4,14 @@ set nocompatible
 filetype off
 call plug#begin()
 
-Plug 'vimcn/vimcdoc'
 Plug 'mileszs/ack.vim' 
 Plug 'preservim/nerdtree'
-Plug 'ervandew/supertab'
 Plug 'vim-syntastic/syntastic'
-Plug 'vim-scripts/taglist.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'altercation/vim-colors-solarized'
+Plug 'ervandew/supertab'
+
+Plug 'Exafunction/codeium.vim', { 'branch': 'main' }
 
 Plug 'nvie/vim-flake8'
 Plug 'hynek/vim-python-pep8-indent'
@@ -25,7 +25,7 @@ Plug 'honza/vim-snippets'
 
 Plug 'tpope/vim-surround'
 
-Plug 'fatih/vim-go'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 Plug 'tomlion/vim-solidity'
 
