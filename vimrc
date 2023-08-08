@@ -8,10 +8,8 @@ Plug 'mileszs/ack.vim'
 Plug 'preservim/nerdtree'
 Plug 'vim-syntastic/syntastic'
 Plug 'kien/ctrlp.vim'
-Plug 'altercation/vim-colors-solarized'
-Plug 'ervandew/supertab'
-
 Plug 'Exafunction/codeium.vim', { 'branch': 'main' }
+Plug 'altercation/vim-colors-solarized'
 
 Plug 'nvie/vim-flake8'
 Plug 'hynek/vim-python-pep8-indent'
